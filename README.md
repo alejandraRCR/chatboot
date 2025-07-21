@@ -24,14 +24,18 @@ La base de datos contiene inicialmente 10 preguntas predefinidas que el chatbot 
 1.  **Búsqueda Exacta (Ignorando Mayúsculas/Minúsculas):**
     * El chatbot primero intenta encontrar una respuesta exacta a la pregunta, sin distinguir entre mayúsculas y minúsculas.
 
-2.  **Búsqueda por Palabras Clave (`keywords`):**
+2.  **Búsqueda por Palabras Clave (`keywords`) con Desambiguación:**
     * Si no se encuentra una pregunta exacta, el sistema busca coincidencias con palabras clave definidas para las respuestas existentes.
+    * **Nuevo Escenario:** Si una pregunta coincide con palabras clave que están asociadas a **múltiples posibles respuestas**, el chatbot informará al usuario que hay "posibles respuestas" y procederá a listar las opciones relevantes para que el usuario pueda elegir o clarificar.
 
 3.  **Registro de Preguntas No Respondidas:**
     * Si una pregunta no se encuentra (ni exacta ni por palabras clave), el chatbot indica que necesita ser "entrenado" y **registra la pregunta** para una futura respuesta.
 
 4.  **Gestión de Preguntas en Espera:**
     * Mientras una pregunta registrada no ha sido respondida por un administrador (o el sistema), si un usuario la vuelve a formular, el chatbot le informará que la pregunta **"está registrada pero aún no ha sido respondida"** (`PENDING_QUESTION`).
+
+**Nota sobre Expansión:**
+* Para este ejercicio, se validan escenarios clave de funcionalidad. Sin embargo, el potencial de un chatbot es vasto, incluyendo la integración de servicios avanzados de **aprendizaje automático (Machine Learning)** para respuestas más complejas y una comprensión más profunda del lenguaje natural.
 
 ---
 
@@ -44,3 +48,4 @@ La base de datos contiene inicialmente 10 preguntas predefinidas que el chatbot 
 * Se utilizó la librería **Lombok** para reducir al máximo el boilerplate code (código repetitivo).
 * En el frontend, se manejaron los escenarios de interacción de forma muy sencilla con JavaScript Vanilla.
 * Los usuarios para el login ya están creados en la base de datos. Por motivos de seguridad, las credenciales se proporcionarán al equipo de forma privada.
+
