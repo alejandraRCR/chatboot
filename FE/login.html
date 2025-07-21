@@ -48,7 +48,7 @@
 
                 if (!response.ok) {
 
-                    const errorData = await response.json().catch(() => ({ message: 'Error desconocido en la respuesta del servidor.' }));
+                    const errorData = await response.json().catch(() => ({ message: 'Usuario o Password incorrectos' }));
                     throw new Error(errorData.message || `Error en la autenticación: ${response.status}`);
                 }
 
