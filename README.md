@@ -17,7 +17,7 @@ La base de datos contiene inicialmente 10 preguntas predefinidas que el chatbot 
 7.  ¿Cuál es la montaña más alta del mundo?
 8.  ¿Cómo funciona la fotosíntesis?
 9.  ¿Qué es la inteligencia artificial?
-10. ... (La décima pregunta es la funcionalidad implícita de registro)
+10. ¿Cómo describe la prueba realizada?
 
 ### 🧠 Funcionalidad del Chatbot
 
