@@ -24,7 +24,7 @@ La base de datos contiene inicialmente 10 preguntas predefinidas que el chatbot 
 1.  **Búsqueda Exacta (Ignorando Mayúsculas/Minúsculas):**
     * El chatbot primero intenta encontrar una respuesta exacta a la pregunta, sin distinguir entre mayúsculas y minúsculas.
 
-2.  **Búsqueda por Palabras Clave (`keywords`) con Desambiguación:**
+2.  **Búsqueda por Palabras Clave (`keywords`):**
     * Si no se encuentra una pregunta exacta, el sistema busca coincidencias con palabras clave definidas para las respuestas existentes.
     * **Nuevo Escenario:** Si una pregunta coincide con palabras clave que están asociadas a **múltiples posibles respuestas**, el chatbot informará al usuario que hay "posibles respuestas" y procederá a listar las opciones relevantes para que el usuario pueda elegir o clarificar.
 
@@ -46,6 +46,6 @@ La base de datos contiene inicialmente 10 preguntas predefinidas que el chatbot 
 * Se empleó el menor código posible en los repositorios, utilizando las capacidades de los frameworks y evitando la necesidad de queries repetitivos.
 * Las entidades Java están diseñadas para que sus nombres coincidan directamente con los nombres de las tablas en la base de datos.
 * Se utilizó la librería **Lombok** para reducir al máximo el boilerplate code (código repetitivo).
-* En el frontend, se manejaron los escenarios de interacción de forma muy sencilla con JavaScript Vanilla.
+* En el frontend, se manejaron los escenarios de interacción de forma muy sencilla con JavaScript.
 * Los usuarios para el login ya están creados en la base de datos. Por motivos de seguridad, las credenciales se proporcionarán al equipo de forma privada.
 
